@@ -34,6 +34,7 @@ nav {
   align-items: center;
   background: #dc143C;
   color: #fff;
+  z-index: 1;
 }
 
 .nav-list {
@@ -109,6 +110,16 @@ main {
 /* PROJECTS */
 
 #projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #4a1a3a;
+}
+
+.container {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(2, 200px);
@@ -116,7 +127,57 @@ main {
 }
 
 .project-tile {
+  position: relative;
   background: #dc143C;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: white;
+}
+
+.hidden-caption {
+  color: #000;
+}
+
+.image-container {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+
+.image-container img {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+}
+
+.image-caption {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  /* -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out; */
+}
+
+.image-caption h3 {
+  text-align: center;
+  font-family: monospace, 'Courier New';
+  font-size: 1.5rem;
+}
+
+.image-container:hover .image-caption {
+  opacity: 1;
 }
 
 /* CONTACT WITH ME */
