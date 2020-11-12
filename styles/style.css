@@ -148,10 +148,13 @@ main {
 }
 
 .container {
+  margin: 0 auto 1rem;
+  width: 100%;
+  max-width: calc(900px + 4rem);
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(2, 200px);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: repeat(auto-fill, 200px);
+  gap: 2rem;
 }
 
 .project-tile {
