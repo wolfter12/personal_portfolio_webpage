@@ -182,12 +182,47 @@ main {
 
 /* CONTACT WITH ME */
 
-#contact-form {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   height: 100vh;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact-form>* {
+  margin-bottom: 1rem;
+}
+
+#contact-form label {
+  font-size: 2rem;
+}
+
+#contact-form input {
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+#email {
+  font-size: 1.2rem;
+}
+
+#submit {
+  align-self: center;
+  width: 150px;
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background: #dc143C;
+  border-style: none;
+  box-shadow: 0 0 10px 1px #dc143C;
 }
 
 /* FOOTER */
