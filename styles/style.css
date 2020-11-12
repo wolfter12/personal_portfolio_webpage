@@ -15,6 +15,8 @@ body {
   /* overflow: hidden; */
   background: #1d252e;
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -24,7 +26,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 75px;
   display: flex;
   flex-direction: row;
@@ -87,7 +89,21 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
   height: 100vh;
+  background-color: #14193c;
+  background: linear-gradient(-10deg, #000, #14193c, transparent);
+}
+
+#about-me h1 {
+  font-size: 3.5rem;
+}
+
+#about-me p {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #dc143C;
 }
 
 /* PROJECTS */
