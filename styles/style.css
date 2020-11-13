@@ -142,13 +142,13 @@ main {
 
 #projects-title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   padding: 0 1rem 0.2rem;
   border-bottom: 1px solid white;
 }
 
 .container {
-  margin: 0 auto 1rem;
+  margin: 0 auto 2rem;
   padding: 0 30px;
   width: 100%;
   max-width: 1037px;
@@ -222,6 +222,17 @@ main {
 
 .image-container:hover .image-caption {
   opacity: 1;
+}
+
+#projects p {
+  font-family: monospace, 'Courier New';
+  font-size: 1.5rem;
+  margin: 0.5rem auto 1rem;
+}
+
+#profile-link {
+  text-decoration: none;
+  color: #dc143C;
 }
 
 /* CONTACT WITH ME */
